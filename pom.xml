@@ -35,6 +35,13 @@
                 <artifactId>docker-maven-plugin</artifactId>
                 <version>0.17.1</version>
                 <extensions>true</extensions>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>build</goal>
+                        </goals>
+                    </execution>
+                </executions>
                 <configuration>
                     <images>
                         <image>
