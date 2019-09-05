@@ -33,7 +33,7 @@
             <plugin>
                 <groupId>io.fabric8</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.17.1</version>
+                <version>0.31.0</version>
                 <extensions>true</extensions>
                 <executions>
                     <execution>
@@ -43,11 +43,11 @@
                     </execution>
                 </executions>
                 <configuration>
-                    <images>
+                    <images>e
                         <image>
                             <name>ch.kup/demo</name>
                             <build>
-                                <dockerFile>Dockerfile</dockerFile>
+                                <contextDir>${project.basedir}</contextDir>
                             </build>
                         </image>
                     </images>
